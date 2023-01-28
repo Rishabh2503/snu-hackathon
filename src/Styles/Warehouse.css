@@ -2,8 +2,8 @@
     position: absolute;
 width: 211px;
 height: 46px;
-left: 79px;
-top: 10px;
+right: 3rem;
+top: 2rem;
 
 font-family: 'Imprima';
 font-style: normal;
@@ -15,35 +15,15 @@ color: #a20b0b;
 }
 .second{
     position: absolute;
-width: 30px;
+width: 40px;
 height: 20px;
-left: 42px;
-top: 40px;
+right: 22rem;
+top: -1.5rem;
 }
-.third{
-    position: absolute;
-width: 262px;
-height: 84px;
-left: 7px;
-top: 177px;
-
-font-family: 'Imprima';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 28px;
-
-color: #000000;
-box-sizing: border-box;
-
-position: absolute;
-width: 938px;
-height: 194px;
-left: 169px;
-top: 116px;
-
-background: #D9D9D9;
-border: 1px solid #000000;
-border-radius: 8px;
-
+.second img{
+    width: 10rem;
+}
+.Wcard{
+    display: inline-flex;
+    justify-content: space-between;
 }
