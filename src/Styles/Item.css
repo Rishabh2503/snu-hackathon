@@ -1,0 +1,68 @@
+.head2{
+    position: absolute;
+width: 286px;
+height: 45px;
+left: 266px;
+top: 150px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 25px;
+
+color: #000000;
+
+}
+.head2 h3{
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    
+    
+    color: #4E4949;
+    
+}
+.head3{
+    position: absolute;
+width: 206px;
+height: 45px;
+left: 686px;
+top: 210px;
+
+font-family: 'Imprima';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.head3 h3 {
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    
+    
+    color:black
+    
+}
+.head4{
+position: absolute;
+width: 2px;
+height: 2px;
+left: 998px;
+top: 180px;
+}
+.wave3{
+    margin-top: 13.8rem;
+}

@@ -31,7 +31,7 @@ const Navbar = () =>
             </li>
             <li className="nav-itemb">
               <NavLink
-                to="/status"
+                to="/countary"
                 activeclassname="active5"
                 className="nav-linksb"
                 onClick={click ? handleClick : null}

@@ -1,0 +1,49 @@
+.first{
+    position: absolute;
+width: 211px;
+height: 46px;
+left: 79px;
+top: 10px;
+
+font-family: 'Imprima';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 46px;
+
+color: #a20b0b;
+}
+.second{
+    position: absolute;
+width: 30px;
+height: 20px;
+left: 42px;
+top: 40px;
+}
+.third{
+    position: absolute;
+width: 262px;
+height: 84px;
+left: 7px;
+top: 177px;
+
+font-family: 'Imprima';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+box-sizing: border-box;
+
+position: absolute;
+width: 938px;
+height: 194px;
+left: 169px;
+top: 116px;
+
+background: #D9D9D9;
+border: 1px solid #000000;
+border-radius: 8px;
+
+}
