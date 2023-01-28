@@ -7,9 +7,9 @@ import RegisterPage from './components/pages/RegisterPage'
 import ForgetPasswordPage from './components/pages/ForgetPasswordPage'
 import HomePage from './components/pages/HomePage'
 import Warehouses from './components/pages/Warehouse'
-
 import './App.css'
 import Item from './components/pages/Item'
+import Inputwarehouse from './components/pages/Inputwarehouse'
 
 export default function App() {
     return (
@@ -23,6 +23,7 @@ export default function App() {
                     <Route path="/home" element={ <HomePage /> } />
                     <Route path="/warehouse" element={ <Warehouses /> } />
                     <Route path="/item" element={ <Item /> } />
+                    <Route path="/Inputwarehouse" element={ <Inputwarehouse /> } />
                     
                 </Routes>
                 

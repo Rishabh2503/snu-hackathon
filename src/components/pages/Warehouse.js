@@ -4,9 +4,9 @@ import SS from "..//../assets/images/ss2.png";
 import Preloader from '../Section/Preloader';
 import logo from "..//../assets/images/logo.png"
 import Warehousecard from "../Section/Warehousecard";
-
+import { Link } from "react-router-dom";
 const Warehouses =() => {
-  const[counter,setCounter]=useState(0)
+  const[counter,setCounter]=useState(3)
   useEffect(()=>{
       const timer = 
       counter > 0 && setInterval(() => setCounter(counter-1),1000);
@@ -17,7 +17,7 @@ const Warehouses =() => {
       <>
       {(counter!==0)?(<Preloader/>):
      ( <>
-      <img alt="logo" src={logo}/>
+      <Link to="/home"><img alt="logo" src={logo} /></Link>
       <div className='first'>
         <h1>Warehouses</h1>
       </div>
