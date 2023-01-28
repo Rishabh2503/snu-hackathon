@@ -3,22 +3,26 @@ import SS from "..//../assets/images/ss2.png";
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
 import logo from "..//../assets/images/logo.png"
+
 const Inputwarehouse = () => {
      let navigate = useNavigate();
     const [productname,SetUserName]=useState("");
     const [Distance,SetUserDistance]=useState("");
     const [countryname,SetCountryname]=useState("");
+    const [costing,SetUserCost]=useState("");
     const handleSubmit = async (e) => {
       e.preventDefault();
       navigate('/Inputwarehouse');
       SetUserName("");
       SetUserDistance("");
       SetCountryname("");
-      console.log(productname,Distance,countryname)
-           axios.post("https://warehouse-si59.onrender.com",{
+      SetUserCost("");
+      console.log(productname,Distance,countryname,costing)
+           axios.post("https://warehouse20.onrender.com/register",{
               productname : productname,     
               Distance : Distance,
-        countryname:countryname
+        countryname:countryname,
+        costing : costing
        })
              .then(result=>{
         console.log(result)
@@ -83,6 +87,17 @@ const Inputwarehouse = () => {
                   name="Distance"
                   value={Distance}
                   onChange={(e)=>{SetUserDistance(e.target.value)}}
+                />
+                </p>
+                <p>
+                    <label>Cost</label><br/>
+                    <input
+                  type="text"
+                  required
+                  id="Costing"
+                  name="Costing"
+                  value={costing}
+                  onChange={(e)=>{SetUserCost(e.target.value)}}
                 />
                 </p>
                 <p>

@@ -4,13 +4,18 @@ import "..//../Styles/Register.css"
 import { useState} from 'react'
 import axios from 'axios'
 import Footer from '../Section/Footer'
+import { validPassword } from "../Section/Regex";
 
 export default function SignInPage() {
    
     const [username,SetUserName]=useState("");
   const [password,SetUserPassword]=useState("");
+   const [pwdError, setPwdError] = useState(false);
  
   const handleSubmit = async (e) => {
+    if (!validPassword.test(password)) {
+        setPwdError(true);
+     }
     e.preventDefault();
     SetUserName("");
     SetUserPassword("");
@@ -28,6 +33,7 @@ export default function SignInPage() {
             console.log(err)
                       
          }) 
+         
   }
     return (
         <>
@@ -61,6 +67,8 @@ export default function SignInPage() {
                 <p>
                     <button id="sub_btn" type="submit" onClick={handleSubmit}>Login</button>
                 </p>
+        
+         {pwdError && <p>Your password is invalid</p>}
             </form>
             <footer>
                 <p>First time? <Link to="/register">Create an account</Link>.</p>
