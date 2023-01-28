@@ -10,12 +10,12 @@ const Inputwarehouse = () => {
     const [countryname,SetCountryname]=useState("");
     const handleSubmit = async (e) => {
       e.preventDefault();
-      navigate('/home');
+      navigate('/Inputwarehouse');
       SetUserName("");
       SetUserDistance("");
       SetCountryname("");
       console.log(productname,Distance,countryname)
-           axios.post("",{
+           axios.post("https://warehouse-si59.onrender.com",{
               productname : productname,     
               Distance : Distance,
         countryname:countryname
@@ -31,7 +31,7 @@ const Inputwarehouse = () => {
     }
   return (
    <>
-   <Link><img alt="logo" src={logo}/></Link>
+   <Link to="/home"><img alt="logo" src={logo}/></Link>
     
       <div className='first'>
         <h1>Warehouses</h1>
@@ -50,7 +50,8 @@ const Inputwarehouse = () => {
     </Link>
     
     </div>
-    <form className='Inputform2'>
+    <h1 style={HeaD}>Enter The Details ..!</h1>
+    <form style={innerform}>
                 <p>
                     <label>Product Name</label><br/>
                     <input
@@ -91,5 +92,14 @@ const Inputwarehouse = () => {
    </>
   )
 }
+const innerform = {
+    marginTop : "5%",
+    marginLeft : "40%"
+}
+const HeaD = {
+    marginLeft:"39%",
+    color:"colar"
+}
+
 
 export default Inputwarehouse

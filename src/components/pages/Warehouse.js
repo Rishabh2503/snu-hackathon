@@ -4,6 +4,9 @@ import SS from "..//../assets/images/ss2.png";
 import Preloader from '../Section/Preloader';
 import logo from "..//../assets/images/logo.png"
 import Warehousecard from "../Section/Warehousecard";
+import w1 from "..//../assets/images/w1.jpg"
+import w2 from "..//../assets/images/w2.jpg"
+import w3 from "..//../assets/images/w3.jpg"
 import { Link } from "react-router-dom";
 const Warehouses =() => {
   const[counter,setCounter]=useState(3)
@@ -37,15 +40,15 @@ const Warehouses =() => {
     <Warehousecard fname="Warehouse1"  detailw="Estancia IT Park,
 Vallancherry Village Chengalpattu,
 Tamilnadu,India 603202
-kartik@gmail.com" productimg=""/>    
+kartik@gmail.com" productimg={w1}/>    
     <Warehousecard  fname="Warehouse2" detailw="Parv IT Park,
 Vallancherry Village Chengalpattu,
 US  94588
-rishabh@gmail.com" productimg=""/> 
+rishabh@gmail.com" productimg={w2}/> 
     <Warehousecard  fname="Warehouse3" detailw="138 Civil line
 Singapore,Singapore,
 55566 Chowk
-sarthak@gmail.com" productimg=""/> 
+sarthak@gmail.com" productimg={w3}/> 
 
     </div>
 

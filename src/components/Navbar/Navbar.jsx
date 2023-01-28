@@ -15,7 +15,7 @@ const Navbar = () =>
         <div className="nav-containerb">
           <NavLink  to="/" className="headlogo">
             
-          <img to="/" src={web} alt="" /> 
+          <img to="/home" src={web} alt="" /> 
           </NavLink>
           <ul className={click ? "nav-menub active5" : "nav-menub"}>
             <li className="nav-itemb">
